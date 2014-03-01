@@ -52,7 +52,7 @@
 -(void)start{
     
     self.hidden = NO;
-    timer = [NSTimer scheduledTimerWithTimeInterval:.35 target:self selector:@selector(ticker) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:.15 target:self selector:@selector(ticker) userInfo:nil repeats:YES];
     
 }
 
@@ -66,7 +66,7 @@
 
 -(void)ticker{
 
-    [UIView animateWithDuration:.35 animations:^{
+    [UIView animateWithDuration:.15 animations:^{
         
         for(UIImageView* bar in barArray){
             
